@@ -3,7 +3,7 @@
         $(function () {
             $.ajax({
                 type: "GET",
-                url: "../js/drugs_1.json",
+                url: "../js/drugs_1.json", 
                 data: '{}',
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
