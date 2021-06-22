@@ -357,6 +357,7 @@ table#table_id {
 #table_id thead th {
     padding: 17px 0;
     text-align: center;
+    width: 100px;
 }
 
 #table_id tbody td {
