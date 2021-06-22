@@ -437,14 +437,11 @@ div#table_id_paginate {
 
 .textHolder a {
     display: block;
+    padding: 5px 15px;
 }
 
-.textHolder a.odd {
-
-}
-
-.textHolder a.even {
-    
+.textHolder a:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.07);
 }
 
 @media (max-width: 650px){
