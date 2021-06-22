@@ -54,7 +54,7 @@
                 "columnDefs": [ {
                     "targets": 16,
                     "data": null,
-                    "defaultContent": "<button type='button' class='viewD'><img src='../img/viewD.svg' /></button>"
+                    "defaultContent": "<button type='button' class='viewD'><img src='./img/viewD.svg' /></button>"
                 } ],
                 initComplete: function () {
                     // Apply the search
@@ -77,7 +77,7 @@
                     } );
                     $('.dataTables_filter').html("")
                     $(".dataTables_info").detach().appendTo('.dataTables_filter');
-                    $('#table_id tfoot tr').append( "<button type='button' class='initSearch'><img src='../img/search.svg' /></button>" );
+                    $('#table_id tfoot tr').append( "<button type='button' class='initSearch'><img src='./img/search.svg' /></button>" );
                 }
             });
             $('.initSearch').click(function(){
