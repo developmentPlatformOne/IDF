@@ -242,6 +242,8 @@ tfoot th {
     padding: 0px 30px;
     line-height: 70px;
     border-bottom: solid 2px #e6e4e4;
+    display: flex;
+    justify-content: space-between;
 }
 
 .drugs-details h3 {
@@ -262,6 +264,7 @@ tfoot th {
     outline: none;
     padding: 0;
     margin: 0;
+    min-width: unset !important;
 }
 
 .drugs-details ul {
