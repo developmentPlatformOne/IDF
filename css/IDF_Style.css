@@ -435,6 +435,18 @@ div#table_id_paginate {
     font-weight: 900;
 }
 
+.textHolder a {
+    display: block;
+}
+
+.textHolder a.odd {
+
+}
+
+.textHolder a.even {
+    
+}
+
 @media (max-width: 650px){
     div#table_id_wrapper {
         overflow: auto;
