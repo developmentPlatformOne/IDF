@@ -1,0 +1,225 @@
+@charset "utf-8";
+/* CSS Document */
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #d1a74b;
+}
+::selection { /* Code for Firefox */
+  color: #fff;
+  background: #d1a74b;
+}
+.waai-container {
+    background: transparent url(../images/waai/bg.png) repeat-y top center;
+    padding: 0
+}
+.waai-container a{
+    ;-o-transition:.5s;-ms-transition:.5s;-moz-transition:.5s;-webkit-transition:.5s;
+}
+.waai-text{color: #92732b}
+.waai-btn{background-color: #997c38;border-radius: 20px;color: #fff}
+.waai-btn:hover{background-color: #d1a74b;}
+.waai-header {
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0px 0px 9px 0px rgba(139, 144, 147, 0.2);
+    padding: 10px
+}
+.waai-about {
+    background-color: rgba(255,255,255,0.8);
+    border-bottom: #f1e6cd solid 5px;
+    display: block;
+    padding: 15px;
+}
+.waai-qa {
+    background-color: rgba(255,255,255,0.8);
+    border-right: #f1e6cd solid 5px;
+    display: block;
+    padding: 20px;
+	box-shadow: 0px 0px 5px 0px rgba(76, 76, 76, 0.10);
+}
+.waai-topics,.waai-pages {
+    display: block;
+    padding: 15px;
+}
+
+.waai-pages ul{font-size: 15px}
+.waai-pages h2{font-size: 22px;color: rgb(146, 115, 43);}
+.waai-pages h3{font-size: 20px;color: rgb(0, 0, 0);}
+.waai-about h1,.waai-topics h1,.waai-pages h1 {
+    font-size: 27px;
+    font-family: "GE Flow";
+    color: rgb(146, 115, 43);
+    font-weight: bold;
+    line-height: 0.852;
+    text-align: center;
+    margin: 20px auto;
+    display: inline-block;
+    position: relative;
+}
+.waai-about h1:before, .waai-about h1:after ,.waai-topics h1:before, .waai-topics h1:after ,.waai-pages h1:before, .waai-pages h1:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid #e8e0cf;
+    top: 10px;
+    width: 450px;
+}
+
+@media (max-width: 1200px) {
+.waai-about h1:before, .waai-about h1:after ,.waai-topics h1:before, .waai-topics h1:after ,.waai-pages h1:before, .waai-pages h1:after{
+    width: 250px;
+}
+}
+
+@media (max-width: 992px) {
+.waai-about h1:before, .waai-about h1:after ,.waai-topics h1:before, .waai-topics h1:after ,.waai-pages h1:before, .waai-pages h1:after{
+    width: 200px;
+}
+}
+
+@media (max-width: 768px) {
+.waai-about h1:before, .waai-about h1:after ,.waai-topics h1:before, .waai-topics h1:after ,.waai-pages h1:before, .waai-pages h1:after{
+    width: 100px;
+}
+}
+
+@media (max-width: 576px) {
+.waai-about h1:before, .waai-about h1:after ,.waai-topics h1:before, .waai-topics h1:after ,.waai-pages h1:before, .waai-pages h1:after{
+    width: 0px;
+}
+}
+.waai-about h1:before,.waai-topics h1:before ,.waai-pages h1:before {
+    right: 100%;
+    margin-right: 15px;
+}
+.waai-about h1:after,.waai-topics h1:after,.waai-pages h1:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+/*waai-block*/
+.waai-block
+{
+	background-color: rgb(255, 255, 255, 0.9);
+	box-shadow: 0px 0px 18px 0px rgba(76, 76, 76, 0.15);
+	padding: 15px;
+	;-o-transition:.5s;-ms-transition:.5s;-moz-transition:.5s;-webkit-transition:.5s;
+}
+
+.waai-block img
+{
+	height: 60px
+}
+.waai-block span
+{
+	display: block;
+	text-align: center;
+	color: #d0a64a;
+	font-size: 16px
+}
+.waai-block a
+{
+	background-color: #997c38;
+	color: #fff;
+	border-radius: 20px;
+	padding: 4px 15px;
+	font-size: 15px;
+	display: block;
+	text-align: center;
+	width: 100px;
+	margin: 10px auto
+}
+.waai-block:hover
+{
+	background-color: #d0a64a;
+}
+.waai-block:hover span
+{
+	color: #fff;
+}
+.waai-block a:hover
+{
+	background-color: #fff;
+	color: #997c38;
+	
+}
+
+/*Subscribers*/
+
+/*subscribe1*/
+.subscribe1{background-color: #a6bf42;padding:15px;border-radius: 5px;color: #fff}
+.subscribe1::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #768830;
+}
+
+.subscribe1::selection {
+  color: #fff;
+  background: #768830;
+}
+.subscribe1 img{width: 100px}
+.subscribe1 .waai-outline-btn{border: 2px solid #fff;border-radius: 5px;padding: 5px;color: #fff;font-size: 15px}
+.subscribe1 .waai-outline-btn:hover{border: 2px solid #768830;color: #768830}
+.subscribe1 .waai-btn{border-radius: 5px;padding: 7px;color: #fff;font-size: 15px;background-color: #768830}
+.subscribe1 .waai-btn:hover{color: #768830;background-color: #fff}
+
+/*End*/
+
+/*subscribe2*/
+.subscribe2{background-color: #d8b564;padding:15px;border-radius: 5px;color: #fff}
+.subscribe2::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #9a8146;
+}
+
+.subscribe2::selection {
+  color: #fff;
+  background: #9a8146;
+}
+.subscribe2 img{width: 100px}
+.subscribe2 .waai-outline-btn{border: 2px solid #fff;border-radius: 5px;padding: 5px;color: #fff;font-size: 15px}
+.subscribe2 .waai-outline-btn:hover{border: 2px solid #9a8146;color: #9a8146}
+.subscribe2 .waai-btn{border-radius: 5px;padding: 7px;color: #fff;font-size: 15px;background-color: #9a8146}
+.subscribe2 .waai-btn:hover{color: #9a8146;background-color: #fff}
+
+/*End*/
+
+
+
+/*subscribe3*/
+.subscribe3{background-color: #aabde9;padding:15px;border-radius: 5px;color: #fff}
+.subscribe3::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #8290b2;
+}
+
+.subscribe3::selection {
+  color: #fff;
+  background: #8290b2;
+}
+.subscribe3 img{width: 100px}
+.subscribe3 .waai-outline-btn{border: 2px solid #fff;border-radius: 5px;padding: 5px;color: #fff;font-size: 15px}
+.subscribe3 .waai-outline-btn:hover{border: 2px solid #8290b2;color: #8290b2}
+.subscribe3 .waai-btn{border-radius: 5px;padding: 7px;color: #fff;font-size: 15px;background-color: #8290b2}
+.subscribe3 .waai-btn:hover{color: #8290b2;background-color: #fff}
+
+/*End*/
+
+
+/*subscribe4*/
+.subscribe4{background-color: #d06449;padding:15px;border-radius: 5px;color: #fff}
+.subscribe4::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #8290b2;
+}
+
+.subscribe4::selection {
+  color: #fff;
+  background: #8290b2;
+}
+.subscribe4 img{width: 100px}
+.subscribe4 .waai-outline-btn{border: 2px solid #fff;border-radius: 5px;padding: 5px;color: #fff;font-size: 15px}
+.subscribe4 .waai-outline-btn:hover{border: 2px solid #a5513c;color: #a5513c}
+.subscribe4 .waai-btn{border-radius: 5px;padding: 7px;color: #fff;font-size: 15px;background-color: #a5513c}
+.subscribe4 .waai-btn:hover{color: #a5513c;background-color: #fff}
+
+/*End*/

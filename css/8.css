@@ -1,0 +1,101 @@
+/*----------Variable----------------*/
+/*Start General Theme Color*/
+/*-------------------- Directions -----------------*/
+/*--------------------    Width    -----------------*/
+/*-------------------- Directions -----------------*/
+.kyr-num {
+    margin-right: -30px !important;
+    background-color: #e9e7de;
+    font-family: "Roboto";
+    margin-left: 5px !important; }
+  
+  /*------- End Reset---------*/
+  /*------------- Start Header --------------*/
+  header .top-links {
+    font-family: "GE Flow bold"; }
+    header .top-links li {
+      float: left;
+      border-left: 1px solid #ccc;
+      border-right: 0; }
+      header .top-links li:first-child {
+        border-left: 0; }
+  
+  /*-------- Start Search --------*/
+  .search-container
+  {
+       left: 0 !important;
+  }
+  
+  /*-------- End Search --------*/
+  /*------------- End Header ----------------*/
+  /*------------------start main navbar ----------------*/
+  /*Start Bootstrap*/
+  .modal-header .close {
+    padding: 1rem;
+    margin: -1rem auto -1rem -1rem;
+    font-size: 34pt;
+    color: #fff; }
+    .modal-header .close:focus {
+      outline: none; }
+  
+  .dropdown-toggle::after {
+    float: left; }
+  
+  /*-------- End Search --------*/
+  /*------------------End main navbar -----------------*/
+  /*-------------------------- Start Home Page ----------------------*/
+  /*-------------------------- Start Banner Slider ---------------------------*/
+  /*-------------------- End Directions ---------------*/
+  .slider2 h2 {
+    text-align: right; }
+  .slider2 p {
+    text-align: right; }
+  .slider2 ul {
+    padding-right: 20px;
+    text-align: right; }
+    .slider2 ul li {
+      text-align: right; }
+  .slider2 ol {
+    padding-left: 10px;
+    text-align: right; }
+    .slider2 ol li {
+      color: #92732b;
+      text-align: right; }
+      .slider2 ol li span {
+        font-family: "GE Flow"; }
+  
+  /*-------------------------- End Banner Slider ----------------------------*/
+  /*-------------------Start Footer Links --------------------------------------*/
+  .flinks h2 {
+    margin-left: 5px;
+    margin-right: 5px; }
+  
+  .shortlinks {
+    border-left: 1px solid #DDDDDD;
+    border-right: 0;
+    height: 70px; }
+    @media (max-width: 992px) {
+  .shortlinks {
+  border-bottom: 1px #E1E1E1 solid;
+  border-left: 0; } }
+    .shortlinks img {
+      float: right; }
+  
+  /*------------------- End Footer Links --------------------------------------*/
+  /*Start:: sitemap*/
+  .widget ul {
+    padding-right: 0; }
+  
+  .widget ul li {
+    padding-right: 0; }
+  
+  /*End::  Sitemap*/
+  /*Start:: Accordion*/
+  .accordion .card-header:after {
+    float: left !important; }
+  
+  a.card-header {
+    text-align: right !important; }
+  
+  /*End:: Accordion*/
+  /*-------------------------- End Home Page ----------------------*/

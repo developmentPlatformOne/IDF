@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>E-Services</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/1.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/2.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/3.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/4.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/5.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/6.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/7.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/8.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/9.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/10.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/IDF_Style.css'>
+    <script src='js/1.js'></script>
+    <script src='js/2.js'></script>
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/dataTable.css">
+    <script src="js/jquery-ui.js"></script>
+    <script type="text/javascript" charset="utf8" src="js/dataTable.js"></script>
+    <script src="js/GetDrugsData.js"></script>
+</head>
+<body>
+<header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 text-center text-lg-right text-md-center"><a href="/">
+                <img src="img/logo.png" alt="مجلس الضمان الصحي التعاوني" class="img-fluid">
+                <img src="img/vision2030.png" alt="مجلس الضمان الصحي التعاوني" class="img-fluid mr-3">
+                </a></div>
+                <div class="col-lg-6 col-md-12 p-0  text-center text-lg-left text-md-center">
+                    <ul class="top-links mt-4 p-0 d-inline-block ">
+                        <li><a href="/en" class="enfont"><b>English</b></a></li>
+                        <li><a href="/Help/Pages/SiteMap.aspx"><i class="fas fa-sitemap"></i></a></li>
+                        <li><a href="/Help/FAQ">الأسئلة الشائعة</a></li>
+                        <li><a href="/Help/Pages/ContactUs.aspx">تواصل معنا</a></li>
+                        <li><a href="/StaffLogin">دخول الموظفين</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+  
+</header>
+<nav class="navbar nav-bg navbar-expand-lg navbar-light text-right p-0">
+    <div class="container p-0 position-relative">
+        <div class="row m-0 main-nav">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span> </button>
+
+            <!--Start Nav Icons-->
+            <!--Pages more used icon-->
+            <a href="#" data-toggle="modal" data-target="#most-used">
+                <i class="fas fa-th fa-mnu text-white m-3"></i>
+            </a>
+            <!--End-->
+
+            <!--Pages more used icon-->
+            <a href="#" data-toggle="modal" data-target="#main-menu"> <i class="fas fa-align-justify fa-mnu text-white m-3"></i> </a>
+            <!--End-->
+
+                <!--Start Search-->
+            <div class="position-absolute search-container">
+
+                <input type="search" id="txtSearch" placeholder="إبحث......" name="search" class="search-input">
+
+                <a href="#" onclick="searchGo()">
+                        <i class="fas fa-search text-white m-1"></i>
+                </a>
+
+            </div>
+            <!--End Search-->
+
+            <!--End Nav Icons-->
+
+            <!--Start Main Menu-->
+            <div class="collapse navbar-collapse flex-row-reverse text-right" id="navbarSupportedContent">
+                <ul class="nav navbar-nav mr-auto" id="menu"><li class="nav-item"><a class="nav-link" href="https://www.cchi.gov.sa/">الرئيسية</a><div class="dropdown-divider d-lg-none d-sm-block"></div></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="https://www.cchi.gov.sa/AboutCCHI/">عن المجلس</a><div class="dropdown-divider d-lg-none d-sm-block"></div><div class="dropdown-menu go-dropdown" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="https://www.cchi.gov.sa/AboutCCHI/Pages/secretariat.aspx">عن الأمانة العامة</a><div class="dropdown-divider"></div><a class="dropdown-item" href="https://www.cchi.gov.sa/AboutCCHI/Pages/OrganizationStructure.aspx">الهيكل التنظيمي</a><div class="dropdown-divider"></div><a class="dropdown-item" href="https://www.cchi.gov.sa/AboutCCHI/Pages/task.aspx">المهام والمسؤوليات</a><div class="dropdown-divider"></div><a class="dropdown-item" href="https://www.cchi.gov.sa/AboutCCHI/Pages/Decisions.aspx">أهم قرارات المجلس</a><div class="dropdown-divider"></div><a class="dropdown-item" href="https://www.cchi.gov.sa/Members/Pages/MSpeech.aspx">أعضاء المجلس</a><div class="dropdown-divider"></div><a class="dropdown-item" href="https://www.cchi.gov.sa/AboutCCHI/Pages/cchi-strategy.aspx">إستراتيجية المجلس</a><div class="dropdown-divider"></div></div></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="https://www.cchi.gov.sa/Rules/Pages/OList.aspx">الانظمة واللوائح</a><div class="dropdown-divider d-lg-none d-sm-block"></div><div class="dropdown-menu go-dropdown" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="https://www.cchi.gov.sa/Rules/Pages/OList.aspx">اللائحة التنفيذية</a><div class="dropdown-divider"></div><a class="dropdown-item" href="https://www.cchi.gov.sa/Rules/Pages/list2.aspx">لائحة تأهيل شركات المطالبات</a><div class="dropdown-divider"></div><a class="dropdown-item" href="https://www.cchi.gov.sa/Rules/Pages/list4.aspx">لائحة لجنة النظر في مخالفات أحكام نظام الضمان الصحي التعاوني</a><div class="dropdown-divider"></div><a class="dropdown-item" href="https://www.cchi.gov.sa/Rules/Pages/document1-7.aspx">الوثيقة الموحدة</a><div class="dropdown-divider"></div><a class="dropdown-item" href="https://www.cchi.gov.sa/Rules/Pages/Decisions.aspx">القرارات والتعاميم</a><div class="dropdown-divider"></div><a class="dropdown-item" href="https://www.cchi.gov.sa/Rules/Pages/VisitorsInsurance.aspx">التأمين على السائحين</a><div class="dropdown-divider"></div><a class="dropdown-item" href="https://www.cchi.gov.sa/Rules/Pages/Premium_Residency.aspx">تأمين الاقامة المميزة</a><div class="dropdown-divider"></div><a class="dropdown-item" href="https://www.cchi.gov.sa/Rules/unitedc/Pages/default.aspx">العقد الموحد</a><div class="dropdown-divider"></div><a class="dropdown-item" href="https://www.cchi.gov.sa/Rules/Pages/FAQ.aspx">الأسئلة المتكررة</a><div class="dropdown-divider"></div></div></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="https://www.cchi.gov.sa/MediaCenter">المركز الاعلامي</a><div class="dropdown-divider d-lg-none d-sm-block"></div><div class="dropdown-menu go-dropdown" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="https://www.cchi.gov.sa/MediaCenter/News/">أخبار المجلس</a><div class="dropdown-divider"></div><a class="dropdown-item" href="https://www.cchi.gov.sa/MediaCenter/Elan/">الأعلانات</a><div class="dropdown-divider"></div><a class="dropdown-item" href="https://www.cchi.gov.sa/MediaCenter/Photos/">مكتبة الصور</a><div class="dropdown-divider"></div><a class="dropdown-item" href="https://www.cchi.gov.sa/MediaCenter/videos/">مكتبة الفيديو</a><div class="dropdown-divider"></div></div></li><li class="nav-item"><a class="nav-link" href="https://www.cchi.gov.sa/Uniplat/Pages/default.aspx">منصة نفيس</a><div class="dropdown-divider d-lg-none d-sm-block"></div></li></ul>
+            </div>
+            <!--End Main Menu-->
+
+        </div>
+
+    </div>
+</nav>
+<style>
+
+</style>
+<div class="drugs">
+    <!-- Nav tabs -->
+    <div class="nav-holder">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#menu0">
+                        <img src="./img/speech.svg" alt="">
+                        <span>Introduction</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#menu1">
+                        <img src="./img/form.svg" alt="">
+                        <span>Development of The formulary</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#menu2">
+                        <img src="./img/guide.svg" alt="">
+                        <span>How to use</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#menu3">
+                        <img src="./img/pills.svg" alt="">
+                        <span>Indication</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="menu0" class="container tab-pane active">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="textHolder">
+                                <h3>What is a Formulary?</h3>
+                                <p>Formulary is a continually updated list of medications and related information, representing the clinical judgment of physicians,
+                                pharmacists, and other experts in the diagnosis, prophylaxis, or treatment of diseases and promotion of health.</p>
+                                <h3>What is CCHI Formulary?</h3>
+                                <p>CCHI Formulary is an evidence-based disease focused open Formulary which provides an essential drug list, either prescription or over
+                                the counter (OTC), that is necessary to treat a certain disease. CCHI Formulary Governance Committee (FGC) with the Pharmacy and
+                                Therapeutic committee (PTC) govern, maintain and continually update the Formulary to make sure that all SFDA drugs are available
+                                based on the most recent clinical national and international guidelines and the provided drugs are safe and effective for the community
+                                of Saudi Arabia403F3F</p>
+                                <h3>What is the Objective of CCHI Formulary?</h3>
+                                <p>The Objective of this Formulary is to provide impartial and objective information to insurance companies in the Kingdom of Saudi Arabia,
+                                as well as to service providers and patients to promote safe, effective and rational use of medicines, which is based on evidence and
+                                global best practices. Other Rationalize use of medicine Promote the use of generics</p>
+                                <h4>objectives include:</h4>
+                                <ul>
+                                    <li>Medicine (therapeutically accurate and cost effective) </li>
+                                    <li>Provide a comprehensive resource to insurance companies and HCPs</li>
+                                    <li>Standardize the prescribing practices in KSA by using the best selected evidence-based guidelines</li>
+                                    <li>Promote affordable and equitable access to healthcare</li>
+                                    <li>Improve governance on the private health care insurance sector</li>
+                                    <li>Decrease healthcare expenditure through the use of therapeutically equivalent but more affordable treatment option</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu1" class="container tab-pane">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="textHolder">
+                                <img src="./img/IDF.jpg" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu2" class="container tab-pane">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="textHolder">
+                                <h3>What information does the CCHI Formulary provide?</h3>
+                                <h4>CCHI Formulary provides the following information:</h4>
+                                <ul>
+                                    <li>Indication</li>
+                                    <li>Drug Class</li>
+                                    <li>ICD Code</li>
+                                    <li>Drug Sub-class</li>
+                                    <li>Trade Name</li>
+                                    <li>Registration Number</li>
+                                    <li>Active Ingredient</li>
+                                    <li>ATC Code</li>
+                                    <li>Dosage Form</li>
+                                    <li>ROA (Route of Administration)</li>
+                                    <li>Strength</li>
+                                    <li>G or B (Generic or Brand)</li>
+                                    <li>Prescribing edits</li>
+                                    <li>Quantity Limit Adults</li>
+                                    <li>Quantity Limit Pediatrics</li>
+                                    <li>Notes</li>
+                                </ul>
+                                <h3>What is an ICD code?</h3>
+                                <p>International Classification of Diseases (ICD) code, based on WHO definition, is “the international standard for defining and reporting
+                                diseases and health conditions. It allows the world to compare and share health information using a common language. The ICD
+                                defines the universe of diseases, disorders, injuries and other related health conditions. These entities are listed in a comprehensive
+                                way as a list of codes with their corresponding descriptions.”</p>
+                                <h3>What is an ATC Code?</h3>
+                                <p>“The Anatomical Therapeutic Chemical (ATC) Classification is an internationally accepted classification system
+                                for medicines that is maintained by the World Health Organization (WHO). The WHO assigns ATC codes to all
+                                active substances contained in medicines based on the therapeutic indication for the medicine.”</p>
+                                <h4>Example:</h4>
+                                <ul>
+                                    <li>B01AC06 acetylsalicylic acid</li>
+                                    <li>B01AC07 dipyridamole</li>
+                                    <li>B01AC30 combinations (e.g. acetylsalicylic acid and dipyridamole)</li>
+                                </ul>
+                                <h3>What is SFDA Drug Code?</h3>
+                                <p>Saudi Food and Drug Administration (SFDA) drug code is a unique numerical SFDA generated code for each drug product specific to
+                                    the drug trade name including its strength, route of administration and dosage form. </p>
+                                <h3>What are prescribing edits?</h3>
+                                <p>Some covered drugs may have additional requirements, rules or limits on coverage. These requirements and limits may include:</p>
+                                <h3>What is a Brand?</h3>
+                                <p>Also known as an originator drug, a brand-name is one marketed by a manufacturer under a brand name ( rather than its generic
+                                    name). Brand-name drugs are often single-source drugs following their initial SFDA approval because of patent protection and
+                                    SFDA-granted regulatory exclusivity. Later, generic versions of some brand-name drugs enter the market and compete with the
+                                    brand-name drug on price.</p>
+                                <h3>What is a Generic?</h3>
+                                <p>This is a drug approved by the SFDA by referencing an originator brand-name drug s initial application. Generic drugs can enter the
+                                    market after the reference product s regulatory exclusivity has expired and after its patents have either expired or been successfully
+                                    challenged in court. </p>
+                                <h3>What is a Quantity Limit?</h3>
+                                <p>This is either the adult or pediatric maximum amount of a drug that can be administered per day based on a maximum daily dose.                                </p>
+                                <h3>What information are available in the notes?</h3>
+                                <p>“Notes” section provides details of the prescribing edits, extra important drug information and special warning and precautions.</p>
+                                <h3>How to navigate the Formulary?</h3>
+                                <p>The CCHI Formulary is provided on an excel sheet platform that users can filter by disease, ICD code, Drug classes, Trade name, SFDA registration
+                                    numbers, Active ingredient, ATC code, and whether the drug is a Brand or Generic.</p>
+                                <p>The Formulary provides Appendices with various tables and protocols that users should refer to whenever mentioned in the notes. Hyperlinked
+                                    Appendices are provided on a separate column for each disease or indication.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu3" class="container tab-pane">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="table-holder">
+                                <img class="drugsLoader" src="./img/Rolling.svg" />
+                                <table id="table_id" class="display">
+                                    <thead>
+                                        <tr>
+                                            <th>Indication</th>
+                                            <th>Trade Name</th>
+                                            <th>Active ingredient</th>
+                                            <th>ICD Code</th>
+
+
+                                            <th>Drug_Class</th>
+                                            <th>Drug_Sub_Class</th>
+                                            <th>G_or_B</th>
+                                            <th>Strength</th>
+                                            <th>ATC_Code</th>
+                                            <th>Dosage_Form</th>
+                                            <th>Quantity_Limit_Adults</th>
+                                            <th>ROA</th>
+                                            <th>Registration_Number</th>
+                                            <th>Notes_1</th>
+                                            <th>Notes_2</th>
+                                            <th>Appendix</th>
+
+                                            <th>Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Indication</th>
+                                            <th>Trade Name</th>
+                                            <th>Active ingredient</th>
+                                            <th>ICD Code</th>
+
+                                            <th>Drug_Class</th>
+                                            <th>Drug_Sub_Class</th>
+                                            <th>G_or_B</th>
+                                            <th>Strength</th>
+                                            <th>ATC_Code</th>
+                                            <th>Dosage_Form</th>
+                                            <th>Quantity_Limit_Adults</th>
+                                            <th>ROA</th>
+                                            <th>Registration_Number</th>
+                                            <th>Notes_1</th>
+                                            <th>Notes_2</th>
+                                            <th>Appendix</th>
+
+                                            <th>Details</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="drugs-details">
+
+    </div>
+    <div class="drugs-overLayer">
+
+    </div>
+</div>
+</body>
+</html>
