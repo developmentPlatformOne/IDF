@@ -132,7 +132,7 @@
                 indicationList += "<option value='" + Indication[i]+ "'>" + Indication[i] + "</option>";
             }
 
-            $('#table_id tfoot tr th:nth-child(1)').append("<select id='selectIndication'><option value='Indication List'>Select Indication</option>" + indicationList + "</select>")
+            $('#table_id tfoot tr th:nth-child(1)').append("<select id='selectIndication'><option value='Indication List'>Indication List</option>" + indicationList + "</select>")
             $( "#Indication" ).autocomplete({
                 source: Indication
             });
