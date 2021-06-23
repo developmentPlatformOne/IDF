@@ -140,7 +140,7 @@
             $("#selectIndication").change(function() {
                 $("#Indication").val($(this).val());
                 var table = $( '#table_id' ).DataTable();
-                table.search( 'initial search value' ).draw();
+                table.search($(this).val()).draw();
             })
         };
     };
