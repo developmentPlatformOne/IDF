@@ -169,7 +169,7 @@ tfoot th {
     margin: auto;
     margin-top: 2px;
 }
-
+#table_id tfoot tr th:nth-child(2),
 #table_id tfoot tr th:nth-child(5),
 #table_id tfoot tr th:nth-child(6),
 #table_id tfoot tr th:nth-child(7),
