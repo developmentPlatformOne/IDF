@@ -137,6 +137,10 @@
             $( "#Indication" ).autocomplete({
                 source: Indication
             });
+
+            $("#selectIndication").change(function() {
+                alert();
+            })
         };
     };
     GetDrugsData();
