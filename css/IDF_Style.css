@@ -497,9 +497,16 @@ a.excel img {
     margin: 0px 5px;
 }
 
+.ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front {
+    width: 40% !important;
+}
+
 @media (max-width: 768px){
     a.excel {
         display: block;
         text-align: center;
+    }
+    .ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front {
+        width: 100% !important;
     }
 }
