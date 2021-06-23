@@ -138,7 +138,9 @@
             });
 
             $("#selectIndication").change(function() {
-                $("#Indication").val($(this).val())
+                $("#Indication").val($(this).val());
+                var table = $( '#table_id' ).DataTable();
+                table.search( 'initial search value' ).draw();
             })
         };
     };
