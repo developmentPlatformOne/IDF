@@ -139,7 +139,7 @@
             });
 
             $("#selectIndication").change(function() {
-                alert();
+                alert($(this).val())
             })
         };
     };
