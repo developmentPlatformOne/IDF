@@ -110,7 +110,7 @@
                     <li><strong>Registration Number</strong> <span>${cellNum.eq(12).html() ? cellNum.eq(12).html() : '...'}</span></li>
                     <li><strong>Notes 1</strong> <span>${cellNum.eq(13).html() ? cellNum.eq(13).html() : '...'}</span></li>
                     <li><strong>Notes 2</strong> <span>${cellNum.eq(14).html() ? cellNum.eq(14).html() : '...'}</span></li>
-                    <li><strong>Appendix</strong> <span>${cellNum.eq(15).html() ? '<a target="_blank" href="' + cellNum.eq(15).html() + '"><img src="./img/pdf.svg" /></a>' : '...'}</span></li>
+                    <li><strong>Appendix</strong> <span>${cellNum.eq(15).html() ? '<a target="_blank" href="PDF/' + cellNum.eq(15).html() + '"><img src="./img/pdf.svg" /></a>' : '...'}</span></li>
                 </ul>
                 `)
                 $('.drugs-overLayer').show();
