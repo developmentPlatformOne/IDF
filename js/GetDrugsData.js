@@ -126,7 +126,14 @@
                     Indication.push(response.Indications[i].Indication)
                 }
             }
-            $('#table_id tfoot tr th:nth-child(1)').append("Hi")
+            var indicationList = ""
+
+            for (i=0; i <= Indication.length; i++) {
+                indicationList += "<option value='" + i + "'>" + i + "</option>";
+            }
+            console.log(Indication)
+
+            $('#table_id tfoot tr th:nth-child(1)').append("<select><option value='Select Indication'>Select Indication</option>" + indicationList + "</select>")
             $( "#Indication" ).autocomplete({
                 source: Indication
             });
