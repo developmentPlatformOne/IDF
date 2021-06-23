@@ -126,7 +126,7 @@
                     Indication.push(response.Indications[i].Indication)
                 }
             }
-                        
+            $('#table_id tfoot tr th:nth-child(1)').append("Hi")
             $( "#Indication" ).autocomplete({
                 source: Indication
             });
