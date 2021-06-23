@@ -133,7 +133,7 @@
             }
             console.log(Indication)
 
-            $('#table_id tfoot tr th:nth-child(1)').append("<select><option value='Select Indication'>Select Indication</option>" + indicationList + "</select>")
+            $('#table_id tfoot tr th:nth-child(1)').append("<select id='selectIndication'><option value='Select Indication'>Select Indication</option>" + indicationList + "</select>")
             $( "#Indication" ).autocomplete({
                 source: Indication
             });
