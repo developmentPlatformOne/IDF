@@ -128,7 +128,7 @@
             }
             var indicationList = ""
 
-            for (i=0; i <= Indication.length; i++) {
+            for (i=0; i < Indication.length; i++) {
                 indicationList += "<option value='" + Indication[i]+ "'>" + Indication[i] + "</option>";
             }
             console.log(Indication)
