@@ -229,6 +229,8 @@ tfoot th {
 }
 #table_id tfoot tr th:nth-child(1) {
     position: relative;
+}
+#table_id tfoot tr th:nth-child(1) input {
     border-radius: 3px 0px 3px 3px;
 }
 
