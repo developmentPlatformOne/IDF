@@ -23,7 +23,7 @@
         function OnSuccess(response) {
             $('#table_id tfoot th').each( function () {
                 var title = $(this).text();
-                $(this).html( '<label>'+title+'</label><input type="text" placeholder="Search '+title+'" />' );
+                $(this).html( '<label>'+title+'</label><input id="'+title.replace(/\s/g, '')+'" type="text" placeholder="Search '+title+'" />' );
             } );
             $.fn.dataTable.ext.errMode = 'none';
             var t = $("#table_id").DataTable({
