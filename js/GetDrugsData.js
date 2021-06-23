@@ -120,6 +120,16 @@
                     $('.drugs-overLayer').hide();
                 })
             } );
+            var Indication = []
+            for (var i = 0; i < 40460; i++) {
+                if (response.Indications[i].Indication != response.Indications[i+1].Indication && response.Indications[i].Indication != undefined && response.Indications[i].Indication.length != 0) {
+                    Indication.push(response.Indications[i].Indication)
+                }
+            }
+                        
+            $( "#Indication" ).autocomplete({
+                source: Indication
+            });
         };
     };
     GetDrugsData();
