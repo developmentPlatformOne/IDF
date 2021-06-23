@@ -499,7 +499,7 @@ a.excel img {
 
 @media (max-width: 768px){
     a.excel {
-        display: inline-block;
+        display: block;
         text-align: center;
     }
 }
