@@ -219,6 +219,25 @@ tfoot th {
     padding: 0px 15px;
 }
 
+#table_id tfoot tr th:nth-child(1) select {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    width: 70%;
+    height: 30px;
+    border-radius: 3px 3px 0 0;
+}
+#table_id tfoot tr th:nth-child(1) {
+    position: relative;
+    border-radius: 3px 0px 3px 3px;
+}
+
+@media (max-width: 768px){
+    #table_id tfoot tr th:nth-child(1) select {
+        width: 60%;
+    }
+}
+
 #table_id tfoot tr th label {
     padding: 0;
     padding-top: 10px;
