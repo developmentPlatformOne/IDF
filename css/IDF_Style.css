@@ -157,6 +157,9 @@ tfoot th {
     transition: all 0.2s linear;
     opacity: 0.8;
     width: calc(100% - 20px);
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 #table_id tfoot tr button.initSearch:hover {
@@ -166,7 +169,7 @@ tfoot th {
 #table_id tfoot tr button.initSearch img {
     width: 20px;
     padding: 0;
-    margin: auto;
+    margin: 0 10px;
     margin-top: 2px;
 }
 #table_id tfoot tr th:nth-child(2),
