@@ -129,7 +129,7 @@
             var indicationList = ""
 
             for (i=0; i <= Indication.length; i++) {
-                indicationList += "<option value='" + i + "'>" + i + "</option>";
+                indicationList += "<option value='" + Indication[i]+ "'>" + Indication[i] + "</option>";
             }
             console.log(Indication)
 
