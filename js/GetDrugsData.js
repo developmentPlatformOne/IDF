@@ -77,7 +77,7 @@
                     } );
                     $('.dataTables_filter').html("")
                     $(".dataTables_info").detach().appendTo('.dataTables_filter');
-                    $('#table_id tfoot tr').append( "<button type='button' class='initSearch'>Search <img src='./img/search.svg' /></button>" );
+                    $('#table_id tfoot tr').append( "<button type='button' class='initSearch'><img src='./img/search.svg' /> Search</button>" );
                 }
             });
             $('.initSearch').click(function(){
