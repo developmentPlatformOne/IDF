@@ -221,17 +221,18 @@ tfoot th {
 
 #table_id tfoot tr th:nth-child(1) select {
     position: absolute;
-    top: 14px;
+    top: 43px;
     right: 10px;
-    width: 70%;
-    height: 30px;
-    border-radius: 3px 3px 0 0;
+    width: 33%;
+    height: 36px;
+    border-radius: 3px 3px 3px 3px;
 }
 #table_id tfoot tr th:nth-child(1) {
     position: relative;
+    width: 100%;
 }
 #table_id tfoot tr th:nth-child(1) input {
-    border-radius: 3px 0px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
 }
 
 @media (max-width: 768px){
