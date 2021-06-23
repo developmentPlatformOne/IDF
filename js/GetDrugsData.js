@@ -131,7 +131,6 @@
             for (i=0; i < Indication.length; i++) {
                 indicationList += "<option value='" + Indication[i]+ "'>" + Indication[i] + "</option>";
             }
-            console.log(Indication)
 
             $('#table_id tfoot tr th:nth-child(1)').append("<select id='selectIndication'><option value='Select Indication'>Select Indication</option>" + indicationList + "</select>")
             $( "#Indication" ).autocomplete({
@@ -139,7 +138,7 @@
             });
 
             $("#selectIndication").change(function() {
-                alert($(this).val())
+                $("#Indication").val($(this).val())
             })
         };
     };
