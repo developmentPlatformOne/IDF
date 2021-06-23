@@ -507,6 +507,6 @@ a.excel img {
         text-align: center;
     }
     .ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front {
-        width: 100% !important;
+        width: 70% !important;
     }
 }
