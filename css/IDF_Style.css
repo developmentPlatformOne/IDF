@@ -311,8 +311,15 @@ tfoot th {
 
 .drugs-details ul li strong,
 .drugs-details ul li span {
-    width: 50%;
+    width: 30%;
     align-self: center;
+}
+
+@media (max-width: 768px){
+    .drugs-details ul li strong {
+        width: 50%;
+        align-self: center;
+    }
 }
 
 .drugs-details ul li span a img {
