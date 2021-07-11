@@ -172,7 +172,7 @@ tfoot th {
     margin: 0 10px;
     margin-top: 2px;
 }
-#table_id tfoot tr th:nth-child(2),
+/* #table_id tfoot tr th:nth-child(2), */
 #table_id tfoot tr th:nth-child(5),
 #table_id tfoot tr th:nth-child(6),
 #table_id tfoot tr th:nth-child(7),
@@ -181,7 +181,7 @@ tfoot th {
 #table_id tfoot tr th:nth-child(10),
 #table_id tfoot tr th:nth-child(11),
 #table_id tfoot tr th:nth-child(12),
-#table_id tfoot tr th:nth-child(13),
+/* #table_id tfoot tr th:nth-child(13), */
 #table_id tfoot tr th:nth-child(14),
 #table_id tfoot tr th:nth-child(15),
 #table_id tfoot tr th:nth-child(16),
