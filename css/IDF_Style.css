@@ -559,3 +559,20 @@ p.disclaimer span {
     font-size: 16px;
     text-decoration: underline;
 }
+
+.betaSite {
+    position: fixed;
+    background-color: #c61f1f;
+    top: 25px;
+    left: -100px;
+    transform: rotate(
+-45deg
+);
+    width: 300px;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
+    z-index: 9999;
+}
